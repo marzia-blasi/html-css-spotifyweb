@@ -26,6 +26,10 @@
   height: 100%;
   width: calc(100% - 230px);
   background-color: blueviolet;
+
+  .w-up {
+    height: 90px;
+  }
 }
 
 .w-bottom {

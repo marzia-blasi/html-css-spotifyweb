@@ -1,6 +1,6 @@
 * {
   background-color: aqua;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -11,9 +11,23 @@
 }
 
 .w-top {
-  height: calc(100%-70px);
+  height: calc(100% - 70px);
   background-color: blue;
+  display: flex;
 }
+
+.w-left {
+  height: 100%;
+  width: 230px;
+  background-color: black;
+}
+
+.w-right {
+  height: 100%;
+  width: calc(100% - 230px);
+  background-color: blueviolet;
+}
+
 .w-bottom {
   height: 70px;
   width: 100%;

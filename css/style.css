@@ -1,12 +1,33 @@
+/* #region utilities  */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 img {
   width: 100%;
 }
+
+.d-flex {
+  display: flex;
+}
+
+:root {
+  --backgroud: #141922;
+  --menu: black;
+  --text-light: white;
+  --text-side-menu-light: #a3a3a3;
+  --text-side-menu-dark: #636363;
+  --color-hoover: ;
+}
+
+/* #endregion utilities  */
 
 /* Contenitore  */
 .wrapper {
@@ -17,7 +38,6 @@ img {
 .w-top {
   height: calc(100% - 70px);
   background-color: blue;
-  display: flex;
 }
 
 /* banner di sinistra */
@@ -35,9 +55,15 @@ img {
 
   .w-up {
     height: 90px;
+    justify-content: flex-end;
+    align-items: center;
   }
+
+  .upgrade {
+    border-radius: 60%;
+  }
+
   .row {
-    display: flex;
     flex-wrap: wrap;
     gap: 10px; /*da modificare */
   }
@@ -45,7 +71,7 @@ img {
   .card {
     width: auto;
     flex-basis: auto;
-    width: calc(100% / 6);
+    width: calc(100% / 7);
   }
 }
 
@@ -67,3 +93,12 @@ img {
 }
 
 /* da modificare il comportamento delle card nelle varie misure di schermo */
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+}

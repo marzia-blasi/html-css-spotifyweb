@@ -37,7 +37,6 @@ img {
 
 .w-top {
   height: calc(100% - 70px);
-  background-color: blue;
 }
 
 /* banner di sinistra */
@@ -51,16 +50,22 @@ img {
 .w-right {
   height: 100%;
   width: calc(100% - 230px);
-  background-color: blueviolet;
+  background-color: var(--backgroud);
 
   .w-up {
     height: 90px;
     justify-content: flex-end;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.464);
   }
 
+  /* il bottone non cambia  */
   .upgrade {
-    border-radius: 60%;
+    border-radius: 9999px;
+    border-style: solid;
+    border-color: var(--text-light);
+    color: var(--text-light);
+    padding: 10px 30px;
   }
 
   .row {

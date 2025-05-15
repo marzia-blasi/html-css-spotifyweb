@@ -5,7 +5,7 @@
 }
 
 img {
-  object-fit: contain;
+  width: 100%;
 }
 
 /* Contenitore  */
@@ -45,6 +45,7 @@ img {
   .card {
     width: auto;
     flex-basis: auto;
+    width: calc(100% / 6);
   }
 }
 

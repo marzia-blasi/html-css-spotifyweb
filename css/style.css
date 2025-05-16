@@ -13,6 +13,10 @@ body {
   ul {
     list-style: none;
   }
+
+  h6 {
+    color: var(--text-side-menu-dark);
+  }
 }
 
 img {

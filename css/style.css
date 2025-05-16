@@ -17,6 +17,10 @@ body {
   a {
     color: var(--text-side-menu-dark);
   }
+
+  span {
+    display: none;
+  }
 }
 
 .container {
@@ -114,6 +118,20 @@ img {
   height: 100%;
   width: 50px;
   background-color: black;
+
+  .logo-small {
+    width: 40px;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+.menuicon {
+  img {
+    width: 30px;
+  }
 }
 
 /* corpo del sito con le righe e le card */
@@ -159,11 +177,11 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-size: ; /*da mettere in grassetto */
+    font-size: 13px; /*da mettere in grassetto */
+    gap: 10px;
   }
 
   li {
-    width: calc(100% / 12 * 3); /*sembra funzionare ma non esce aria */
   }
 
   a {
@@ -181,8 +199,23 @@ img {
 /* da modificare il comportamento delle card nelle varie misure di schermo */
 
 @media screen and (min-width: 576px) {
+  body {
+    span {
+      display: inline;
+    }
+  }
+
   .w-left {
     width: 230px;
+
+    .logo-small {
+      display: none;
+    }
+
+    .logo {
+      display: block;
+      height: 40px;
+    }
   }
 
   .w-right {

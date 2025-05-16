@@ -146,6 +146,10 @@ img {
     width: auto;
     flex-basis: auto;
   }
+
+  .col-6 {
+    width: 50%;
+  }
 }
 
 /* player */
@@ -167,14 +171,18 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .col-3 {
-    width: calc(100% / 12 * 3);
+@media screen and (min-width: 768px) {
+  .w-right {
+    .col-3 {
+      width: calc(100% / 12 * 3);
+    }
   }
 }
 
 @media screen and (min-width: 992px) {
-  .col-2 {
-    width: calc(100% / 12 * 2);
+  .w-right {
+    .col-2 {
+      width: calc(100% / 12 * 2);
+    }
   }
 }

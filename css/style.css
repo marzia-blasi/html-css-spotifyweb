@@ -8,6 +8,11 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-light);
+
+  ul {
+    list-style: none;
+  }
 }
 
 img {
@@ -16,6 +21,10 @@ img {
 
 .d-flex {
   display: flex;
+}
+
+[class^="col"] {
+  padding: 1rem;
 }
 
 :root {
@@ -29,27 +38,80 @@ img {
 
 /* #endregion utilities  */
 
+/* #region Colonne */
+
+.col-1 {
+  width: calc(100% / 12 * 1);
+}
+
+.col-2 {
+  width: calc(100% / 12 * 2);
+}
+
+.col-3 {
+  width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+  width: calc(100% / 12 * 4);
+}
+
+.col-5 {
+  width: calc(100% / 12 * 5);
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: calc(100% / 12 * 7);
+}
+
+.col-8 {
+  width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+  width: calc(100% / 12 * 9);
+}
+
+.col-10 {
+  width: calc(100% / 12 * 10);
+}
+
+.col-11 {
+  width: calc(100% / 12 * 11);
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* #endregion colonne  */
+
 /* Contenitore  */
 .wrapper {
-  width: 100%;
-  height: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .w-top {
   height: calc(100% - 70px);
+  overflow-y: auto;
 }
 
 /* banner di sinistra */
 .w-left {
   height: 100%;
-  width: 230px;
+  width: 50px;
   background-color: black;
 }
 
 /* corpo del sito con le righe e le card */
 .w-right {
   height: 100%;
-  width: calc(100% - 230px);
+  width: calc(100% - 50px);
   background-color: var(--backgroud);
 
   .w-up {
@@ -59,7 +121,7 @@ img {
     background-color: rgba(0, 0, 0, 0.464);
   }
 
-  /* il bottone non cambia  */
+  /* il bottone non cambia ! perchè non si modifica?  */
   .upgrade {
     border-radius: 9999px;
     border-style: solid;
@@ -76,7 +138,6 @@ img {
   .card {
     width: auto;
     flex-basis: auto;
-    width: calc(100% / 7);
   }
 }
 
@@ -87,23 +148,26 @@ img {
   background-color: bisque;
 }
 
-@media screen and (max-width: 480px) {
+/* da modificare il comportamento delle card nelle varie misure di schermo */
+
+@media screen and (min-width: 576px) {
   .w-left {
-    width: 50px;
+    width: 230px;
   }
 
   .w-right {
-    width: calc(100% - 50px);
+    width: calc(100% - 230px);
   }
 }
 
-/* da modificare il comportamento delle card nelle varie misure di schermo */
-
-@media screen and (max-width: 576px) {
-}
-
 @media screen and (max-width: 768px) {
+  .col-3 {
+    width: calc(100% / 12 * 3);
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .col-2 {
+    width: calc(100% / 12 * 2);
+  }
 }

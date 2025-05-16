@@ -103,7 +103,6 @@ img {
 
 .w-top {
   height: calc(100% - 70px);
-  overflow-y: auto;
 }
 
 /* banner di sinistra */
@@ -117,6 +116,7 @@ img {
 .w-right {
   height: 100%;
   width: calc(100% - 50px);
+  overflow-y: auto;
 
   .w-up {
     height: 90px;

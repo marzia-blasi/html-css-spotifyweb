@@ -13,6 +13,10 @@ body {
   h6 {
     color: var(--text-side-menu-dark);
   }
+
+  a {
+    color: var(--text-side-menu-dark);
+  }
 }
 
 .container {
@@ -132,6 +136,7 @@ img {
     border-color: var(--text-light);
     color: var(--text-light);
     padding: 10px 30px;
+    margin-right: 10px;
   }
 
   .row {
@@ -153,6 +158,16 @@ img {
     list-style: none;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    font-size: ; /*da mettere in grassetto */
+  }
+
+  li {
+    width: calc(100% / 12 * 3); /*sembra funzionare ma non esce aria */
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 

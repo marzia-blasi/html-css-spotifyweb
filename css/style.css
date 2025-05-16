@@ -19,6 +19,10 @@ body {
   }
 }
 
+.container {
+  width: 95%;
+}
+
 img {
   width: 100%;
 }
@@ -98,6 +102,7 @@ img {
 .wrapper {
   height: 100vh;
   overflow: hidden;
+  background-color: var(--backgroud);
 }
 
 .w-top {
@@ -116,7 +121,6 @@ img {
 .w-right {
   height: 100%;
   width: calc(100% - 50px);
-  background-color: var(--backgroud);
 
   .w-up {
     height: 90px;
@@ -136,7 +140,6 @@ img {
 
   .row {
     flex-wrap: wrap;
-    gap: 10px; /*da modificare */
   }
 
   .card {

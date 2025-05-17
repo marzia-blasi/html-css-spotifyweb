@@ -120,6 +120,8 @@ img {
   width: 50px;
   background-color: black;
   color: var(--text-side-menu-dark);
+  flex-direction: column;
+  justify-content: space-between;
 
   .logo-small {
     width: 40px;

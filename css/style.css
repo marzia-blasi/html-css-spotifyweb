@@ -152,35 +152,19 @@ img {
   }
 }
 
-.istall
+.install {
+  width: 30px;
+  height: 30px;
+}
 
+.profile {
+}
 
 /* corpo del sito con le righe e le card */
 .w-right {
   height: 100%;
   width: calc(100% - 50px);
   overflow-y: auto;
-
-  .w-up {
-    height: 90px;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.464);
-  }
-
-  /* il bottone non cambia ! perchè non si modifica?  */
-  .upgrade {
-    border-radius: 9999px;
-    border-style: solid;
-    border-color: var(--text-light);
-
-    padding: 10px 30px;
-    margin-right: 10px;
-
-    a {
-      color: var(--text-light);
-    }
-  }
 
   .row {
     flex-wrap: wrap;
@@ -193,6 +177,26 @@ img {
 
   .col-6 {
     width: 50%;
+  }
+}
+
+.w-up {
+  height: 90px;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.464);
+
+  .upgrade {
+    border-radius: 9999px;
+    border-style: solid;
+    border-color: var(--text-light);
+
+    padding: 10px 30px;
+    margin-right: 10px;
+
+    a {
+      color: var(--text-light);
+    }
   }
 }
 

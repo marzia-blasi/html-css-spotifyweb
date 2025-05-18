@@ -155,15 +155,24 @@ img {
 
   .soluzione {
     align-items: center;
+    gap: 10px;
     /* aggiungere gap? o padding per  */
   }
 }
-/* 
-.install,
-.profile {
+
+.c-top a,
+.c-bot a {
+  align-items: center;
+  gap: 10px;
+  /* aggiungere gap? o padding per  */
+}
+
+.circle {
+  background-color: var(--text-side-menu-light);
   width: 30px;
   height: 30px;
-} */
+  border-radius: 50%;
+}
 
 /* corpo del sito con le righe e le card */
 .w-right {

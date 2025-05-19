@@ -10,8 +10,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--text-light);
 
+  h2 {
+    margin: 10px;
+  }
+
   h6 {
     color: var(--text-side-menu-dark);
+    margin: 10px;
   }
 
   a {
@@ -51,7 +56,7 @@ img {
   --text-side-menu-light: #a3a3a3;
   --text-side-menu-dark: #636363;
   --player-bottom-bg: #282828;
-  --color-hoover: ;
+  --color-borgerd-green: #adff2f;
 }
 
 /* #endregion utilities  */
@@ -155,6 +160,22 @@ img {
   }
 }
 
+.homeicon {
+  /* posso farlo con after  */
+  position: relative;
+}
+
+.homeicon::after {
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 20px;
+  background-color: var(--color-borgerd-green);
+}
+
 .playlist {
   /* ma forse h3 posso metterlo in body  */
   h3 {
@@ -165,10 +186,15 @@ img {
     width: 40px;
     height: 40px;
     background-color: var(--text-side-menu-light);
+    position: relative;
   }
   b {
     font-size: 2rem;
     color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   ul li {
@@ -223,6 +249,11 @@ hr {
     flex-basis: auto;
   }
 
+  .bigcircle {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
   .col-6 {
     width: 50%;
   }
@@ -253,13 +284,29 @@ hr {
 }
 
 .menu {
+  margin: 10px 0;
+
   ul {
     list-style: none;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-size: 13px; /*da mettere in grassetto */
+    font-size: 13px;
     gap: 10px;
+  }
+
+  a {
+    position: relative;
+  }
+
+  .undergreen::after {
+    content: "";
+    position: absolute;
+    left: 27px;
+    bottom: -4px;
+    height: 1px;
+    width: 30px;
+    background-color: var(--color-borgerd-green);
   }
 }
 

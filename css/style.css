@@ -340,6 +340,26 @@ hr {
   height: 70px;
   width: 100%;
   background-color: var(--player-bottom-bg);
+
+  .player {
+    justify-content: space-between;
+  }
+
+  h6 {
+    margin: 0;
+  }
+}
+
+.minialbum,
+.minibarra,
+.miniutility {
+  background-color: #adff2f;
+  width: 230px;
+}
+
+.minicontainer {
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 /* da modificare il comportamento delle card nelle varie misure di schermo */

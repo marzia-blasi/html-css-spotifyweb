@@ -40,6 +40,9 @@ body {
 img {
   width: 100%;
 }
+.mini {
+  width: 50px;
+}
 
 .d-flex {
   display: flex;
@@ -130,6 +133,7 @@ img {
   width: 50px;
   padding: 15px 12px;
   background-color: black;
+  overflow: hidden;
   color: var(--text-side-menu-dark);
   flex-direction: column;
   justify-content: space-between;

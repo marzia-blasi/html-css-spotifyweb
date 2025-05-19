@@ -238,14 +238,18 @@ hr {
     border-radius: 9999px;
     border-style: solid;
     border-color: var(--text-light);
-
     padding: 10px 30px;
-    margin-right: 10px;
+    margin-right: 15px;
+    transition: background-color 0.3s;
 
     a {
       color: var(--text-light);
     }
   }
+}
+
+.upgrade:hover {
+  transform: scale(1.1);
 }
 
 .menu {

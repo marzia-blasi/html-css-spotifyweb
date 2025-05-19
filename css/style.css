@@ -50,6 +50,7 @@ img {
   --text-light: white;
   --text-side-menu-light: #a3a3a3;
   --text-side-menu-dark: #636363;
+  --player-bottom-bg: #282828;
   --color-hoover: ;
 }
 
@@ -167,6 +168,7 @@ img {
   }
   b {
     font-size: 2rem;
+    color: black;
   }
 
   ul li {
@@ -181,7 +183,6 @@ img {
   .soluzione {
     align-items: center;
     gap: 10px;
-    /* aggiungere gap? o padding per  */
   }
 }
 
@@ -189,7 +190,14 @@ img {
 .c-bot a {
   align-items: center;
   gap: 10px;
-  /* aggiungere gap? o padding per  */
+
+  i {
+    margin: 5px;
+  }
+}
+
+hr {
+  margin-bottom: 5px;
 }
 
 .circle {
@@ -255,7 +263,7 @@ img {
 .w-bottom {
   height: 70px;
   width: 100%;
-  background-color: bisque;
+  background-color: var(--player-bottom-bg);
 }
 
 /* da modificare il comportamento delle card nelle varie misure di schermo */

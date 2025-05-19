@@ -350,8 +350,8 @@ hr {
   }
 }
 
+/* classi di debug */
 .minialbum,
-.minibarra,
 .miniutility {
   background-color: #adff2f;
   width: 230px;
@@ -360,6 +360,30 @@ hr {
 .minicontainer {
   align-items: center;
   justify-content: space-evenly;
+}
+
+.iconeplay {
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+
+  li {
+    margin: 10px;
+  }
+}
+
+.c-barra {
+  p {
+    font-size: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+.barra {
+  border-radius: 10px;
+  width: 500px;
+  height: 5px;
+  background-color: var(--text-side-menu-dark);
 }
 
 /* da modificare il comportamento delle card nelle varie misure di schermo */
